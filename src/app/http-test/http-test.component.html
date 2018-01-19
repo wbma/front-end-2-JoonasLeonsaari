@@ -1,8 +1,8 @@
 <p>
-  {{(someData)}}
+  {{someData}}
 </p>
 <ul>
   <li *ngFor="let image of imgsrc">
-    <img src="http://media.mw.metropolia.fi/wbma/uploads/{{image.filename}}"/>
+    <img [src]="'http://media.mw.metropolia.fi/wbma/uploads/' + image.filename"/>
   </li>
 </ul>

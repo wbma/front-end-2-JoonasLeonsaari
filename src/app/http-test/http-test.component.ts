@@ -15,7 +15,7 @@ export class HttpTestComponent implements OnInit {
   GetJSON() {
     this.http.get('assets/package.json').subscribe((data) =>{
     console.log(data);
-    this.someData = data.name;
+    this.someData = data['name'];
     });
   }
 
